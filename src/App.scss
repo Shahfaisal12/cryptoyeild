@@ -282,6 +282,7 @@ body {
       font-weight: 700;
       font-size: 14px;
       color: #ffffff;
+      margin-bottom: 10px;
     }
   }
   .link {
@@ -305,5 +306,134 @@ body {
   .small-text {
     font-size: 18px;
     line-height: 25px;
+  }
+}
+
+///////////// Made Samplle ///////////////@at-root
+.madesample {
+  margin-top: 1260px;
+  position: relative;
+  overflow: hidden;
+  max-width: 860.23px;
+  height: 665.63px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  .section {
+    position: absolute;
+    bottom: -86px;
+  }
+
+  .context {
+    margin-bottom: 30px;
+    span {
+      font-weight: 500;
+      font-size: 18px;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+    .heading {
+      color: #160f1a !important;
+      margin-bottom: 24px;
+    }
+    .small-text {
+      margin-bottom: 10px !important;
+    }
+    .btn-learn {
+      margin-top: 30px;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 16px 32px;
+      width: 316px;
+      height: 63px;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+      color: #ffffff;
+    }
+  }
+  span {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c3a4b;
+  }
+  .heading {
+    font-weight: 700;
+    font-size: 44px;
+    color: #6d7580;
+  }
+  .small-text {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c3a4b;
+  }
+}
+
+////////////////////// cryptocurrency-section ////////////@at-root
+.cryptocurrency-section {
+  height: 850px;
+  // width: ;
+  background-image: url("../public/assets/cryptocurrency.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .context {
+    span {
+      font-weight: 500;
+      font-size: 18px;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+    .heading {
+      margin-bottom: 50px;
+    }
+    .small-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 170%;
+      margin-bottom: 50px;
+    }
+    .btn-card {
+      font-weight: 600;
+      font-size: 18px;
+      padding: 16px 32px;
+      width: 288px;
+      height: 63px;
+      background: rgba(33, 30, 31, 0.5);
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+    }
+  }
+  .brand {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .price {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #d895ff;
+    
+  }
+  .border-vertical{
+      border-left: 1px solid #545d69;
+      // transform: rotate(90deg);
+  }
+}
+
+//////////////////////// Footer section ///////////////////
+.footer-section{
+  .btn-icon:nth-child(2){
+    margin-left: 24px;
+
   }
 }
