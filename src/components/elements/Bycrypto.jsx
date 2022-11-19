@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {FiArrowRight} from 'react-icons/fi'
+import { FiArrowRight } from 'react-icons/fi'
 
 
 const tableData = [{
@@ -53,28 +53,28 @@ const Bycrypto = () => {
 
                     </div>
                 </div>
+                <div className="table-responsive">
+                    <table className="table">
+                        <tbody>
+                            {
+                                tableData.map((item) =>
+                                    <tr>
+                                        <td>{item.name} <span className='mb-0'>{item.brand}</span></td>
+                                        <td>{item.price}</td>
+                                        <td>{item.percent}</td>
+                                        <td>{item.value}</td>
+                                        <td><img src={item.img} alt='' /></td>
+                                        <td><button type="button" className="btn btn-dark">Trade</button>
+                                        </td>
+                                    </tr>
+                                )
 
-                <table className="table">
+                            }
+                        </tbody>
+                    </table>
+                </div>
 
-                    <tbody>
-                        {
-                            tableData.map((item) =>
-                                <tr>
-                                    <td>{item.name} <span className='mb-0'>{item.brand}</span></td>
-                                    <td>{item.price}</td>
-                                    <td>{item.percent}</td>
-                                    <td>{item.value}</td>
-                                    <td><img src={item.img} alt='' /></td>
-                                    <td><button type="button" className="btn btn-dark">Trade</button>
-                                    </td>
-                                </tr>
-                            )
-
-                        }
-                    </tbody>
-                </table>
-
-<div className="btn-learn d-flex m-auto d-flex align-items-center">Learn More <FiArrowRight style={{marginLeft:'35px'}} /></div>
+                <div className="btn-learn d-flex m-auto d-flex align-items-center">Learn More <FiArrowRight style={{ marginLeft: '35px' }} /></div>
             </div>
         </div>
     )

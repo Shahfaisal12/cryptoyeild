@@ -13,6 +13,9 @@ body {
   font-size: 48px;
   line-height: 56px;
 }
+.mr-24 {
+  margin-right: 24px;
+}
 /////////////////////////////////// TOOGLER ICON COLOR CHANGE COLOR //////////////////////////
 
 .navbar .navbar-toggler-icon {
@@ -100,6 +103,11 @@ body {
       color: #d895ff;
     }
   }
+  .btns {
+    img {
+      padding-right: 30px;
+    }
+  }
 }
 
 /////////////////////////////////// bycrypto-section ///////////////////@at-root
@@ -157,7 +165,7 @@ body {
   height: 850px;
   background-image: url("../public/assets/bg-warless.png");
   background-color: rgba(22, 15, 26, 0.5);
-  
+
   .context {
     span {
       font-weight: 500;
@@ -165,8 +173,6 @@ body {
       margin-bottom: 10px;
     }
     .heading {
-      font-weight: 700;
-      font-size: 48px;
       margin-bottom: 24px;
     }
     .small-text {
@@ -185,5 +191,119 @@ body {
       border: 1px solid #ffffff;
       border-radius: 8px;
     }
+  }
+}
+
+/////////////////////////////////////////////  Deposit Crypto  ////////////////////////////@at-root
+
+.depositcrypto {
+  position: relative;
+  margin-top: 67px;
+  overflow: hidden;
+  max-width: 860.23px;
+  height: 665.63px;
+  margin-left: auto;
+  margin-right: auto;
+  .section {
+    position: absolute;
+    bottom: -86px;
+  }
+
+  .context {
+    margin-bottom: 30px;
+    span {
+      font-weight: 500;
+      font-size: 18px;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+    .heading {
+      color: #160f1a !important;
+    }
+    .small-text {
+      margin-bottom: 30px !important;
+    }
+    .btn-learn {
+      font-weight: 600;
+      font-size: 18px;
+      padding: 16px 32px;
+      width: 292px;
+      height: 63px;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+      color: #ffffff;
+    }
+  }
+  span {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c3a4b;
+  }
+  .heading {
+    font-weight: 700;
+    font-size: 44px;
+    color: #6d7580;
+  }
+  .small-text {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c3a4b;
+  }
+}
+
+////////////////////////////////////////////////////  Trading  Confidience //////////////////////////
+.tradingconfidience {
+  position: absolute;
+  width: 100%;
+  height: 713px;
+
+  background: #160f1a;
+
+  .text-content {
+    margin-top: 150px;
+
+    span {
+      font-weight: 500;
+      font-size: 18px;
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 24px;
+    }
+    .heading {
+      margin-bottom: 60px;
+    }
+    .label {
+      font-weight: 700;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+  .link {
+    font-size: 18px;
+  }
+  .context {
+    margin-left: 15px;
+  }
+  .pl-50 {
+    padding-left: 50px;
+  }
+  .display {
+    margin-top: 70px;
+  }
+  .noraml-heading {
+    font-weight: 700;
+    font-size: 32px;
+    color: #160f1a;
+    margin-bottom: 24px;
+  }
+  .small-text {
+    font-size: 18px;
+    line-height: 25px;
   }
 }
