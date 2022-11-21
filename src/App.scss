@@ -133,20 +133,23 @@ body {
     width: 84px;
     height: 47px;
   }
-  .table {
+  .table-responsive{
     margin: 70px 0px 50px 0px;
-    tr {
-      td {
-        font-weight: 600;
-        font-size: 20px;
-        color: #2c3a4b;
-        span {
-          font-size: 18px !important;
-          color: #545d69;
+    .table {
+      tr {
+        td {
+          font-weight: 600;
+          font-size: 20px;
+          color: #2c3a4b;
+          span {
+            font-size: 18px !important;
+            color: #545d69;
+          }
         }
       }
     }
   }
+  
   .btn-learn {
     font-weight: 600;
     font-size: 18px;
@@ -315,11 +318,9 @@ body {
   position: relative;
   overflow: hidden;
   max-width: 860.23px;
-  height: 665.63px;
+  height: 620px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  justify-content: center;
   .section {
     position: absolute;
     bottom: -86px;
@@ -375,7 +376,7 @@ body {
 
 ////////////////////// cryptocurrency-section ////////////@at-root
 .cryptocurrency-section {
-  height: 850px;
+  height: 700px;
   // width: ;
   background-image: url("../public/assets/cryptocurrency.png");
   background-repeat: no-repeat;
@@ -433,7 +434,7 @@ body {
 .footer-section {
   padding-top: 70px;
   // height: 760px;
-background: #160F1A;
+  background: #160f1a;
   .btn-icon:nth-child(2) {
     margin-left: 24px;
   }
@@ -447,10 +448,13 @@ background: #160F1A;
     }
     li {
       list-style: none;
-      font-size: 16px;
       line-height: 170%;
-      letter-spacing: 0.005em;
-      color: #a5abb3;
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 0.005em;
+        color: #a5abb3;
+      }
     }
   }
 
@@ -461,11 +465,76 @@ background: #160F1A;
   .copy-right {
     padding: 30px 0px;
     font-size: 14px;
-line-height: 170%;
-letter-spacing: 0.008em;
-color: #545D69;
+    line-height: 170%;
+    letter-spacing: 0.008em;
+    color: #545d69;
   }
-  .mt-30{
+  .mt-30 {
     margin-top: 30px;
   }
+  .soical-icons {
+    .icon {
+      color: #A5ABB3;
+      margin: 34px 34px 0px 0px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
+
+
+//////////////////// MEDIA QUERRY ////////////////////@at-root
+
+@media only screen and (max-width: 600px) {
+  .navbar-nav{
+    background-color: #160f1a;
+    li{
+      padding-left: 0px !important;
+    }
+  }
+  .bycrypto-section{
+    padding: 40px 0px 40px 0px;
+  }
+  .visacards-section {
+    height: 650px;
+  }
+  .depositcrypto{
+    margin-top: 0px;
+    .section {
+      bottom: 67px;
+ }
+  }
+.heading {
+  font-size: 24px;
+  line-height: 40px;
+}
+.tradingconfidience .text-content {
+  margin-top: 60px;
+  .context{
+    .mr-24{
+      margin-bottom: 30px;
+    }
+  }
+}
+.icon-row{
+  margin-bottom: 30px;
+}
+.madesample {
+  margin-top: 1050px;
+  overflow: visible;
+  .context .btn-learn {
+    padding: 16px 24px;
+    width: 290px;
+  }
+  .section {
+    bottom: 30px; 
+  }
+}
+.cryptocurrency-section {
+  height: 550px;
+}
+.footer-section{
+  text-align: center;
+}
+
 }

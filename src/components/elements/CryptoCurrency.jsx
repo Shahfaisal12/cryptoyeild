@@ -16,7 +16,7 @@ const CryptoCurrency = () => {
                                     </div>
                                     <div className="price">2022</div>
                                 </div>
-                                <div className="col-md-6 border-vertical">
+                                <div className="col-md-6 border-vertical mt-3 mt-md-0">
                                     <div className="brand text-white">
                                     Users
                                     </div>

@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="hero-section py-5">
       <div className="container">
         <div className="row">
-          <div className="col-md-5">
+          <div className="col-md-5 d-none d-md-block">
             <div className="img d-flex justify-content-center mb-4 mb-md-0">
             <img src="assets/mbl.png" alt="" />
             </div>
@@ -40,10 +40,10 @@ const Hero = () => {
                 </div>
               </div>
               <div className="btns mt-5">
-                <div className="d-flex flex-wrap">
-                  <img src="assets/getgoogle.svg" alt="" />
-                  <img className='img-fluid my-3' src="assets/getplay.svg" alt="" />
-                  <img src="assets/barcode.svg" alt="" />
+                <div className="d-flex flex-wrap align-items-center">
+                  <a href="/"><img src="assets/getgoogle.svg" alt="" /></a>
+                  <a href="/"><img className='img-fluid my-3' src="assets/getplay.svg" alt="" /></a>
+                  <a href="/"><img src="assets/barcode.svg" alt="" /></a>
                 </div>
               </div>
             </div>

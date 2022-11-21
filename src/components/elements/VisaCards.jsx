@@ -11,7 +11,7 @@ const VisaCards = () => {
                     <div className="small-text pt-4">
                         Enjoy up to 5% back on all spending with your sleek, pure metal card. <br />
                         No annual fees. Top-up with fiat or crypto.</div>
-                    <div className="btn-card d-flex justify-content-center align-items-center m-auto">Choose Your Cards <FiArrowRight style={{ marginLeft: '35px' }} /></div>
+                    <a href='/' className="btn-card d-flex justify-content-center align-items-center m-auto text-decoration-none text-white">Choose Your Cards <FiArrowRight style={{ marginLeft: '35px' }} /></a>
                 </div>
             </div>
 

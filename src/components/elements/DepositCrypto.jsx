@@ -15,7 +15,7 @@ const DepositCrypto = () => {
                                         earn rewards</div>
                                     <div className="small-text">Choose from 40+ cryptocurrencies and stablecoins.
                                     </div>
-                                    <div className="btn-learn d-flex align-items-center">Calculate Rewards <FiArrowRight style={{ marginLeft: '35px' }} /></div>
+                                    <a href='/' className="btn-learn d-flex align-items-center text-decoration-none">Calculate Rewards <FiArrowRight style={{ marginLeft: '35px' }} /></a>
                                 </div>
                                 <div className="row">
                                     <div className="col-md-6">
@@ -35,7 +35,7 @@ const DepositCrypto = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 d-none d-md-block">
                             <div className="fram d-flex justify-content-center">
                                 <img src="assets/mbl.png" alt="" />
                             </div>

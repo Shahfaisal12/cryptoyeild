@@ -74,7 +74,7 @@ const Bycrypto = () => {
                     </table>
                 </div>
 
-                <div className="btn-learn d-flex m-auto d-flex align-items-center">Learn More <FiArrowRight style={{ marginLeft: '35px' }} /></div>
+                <a href='/' className="btn btn-learn d-flex m-auto d-flex align-items-center">Learn More <FiArrowRight style={{ marginLeft: '35px' }} /></a>
             </div>
         </div>
     )

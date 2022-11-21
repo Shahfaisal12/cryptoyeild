@@ -25,15 +25,17 @@ const TradingConfidience = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="icon-row pl-50">
-                            <div className="d-flex flex-wrap">
+                        <div className="icon-row1 pl-50">
+                            <div className="d-flex">
                                 <img src="assets/small-mbl.svg" alt="" />
                                 <div className="context">
                                     <div className="label">
                                         MOBILE APP
                                     </div>
+                                    <div className="d-flex flex-wrap">
                                     <a href="/"><img className='mr-24' src='assets/Playstoretra.svg' alt='' /></a>
                                     <a href="/"><img src='assets/Appstoretra.svg' alt='' /></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
