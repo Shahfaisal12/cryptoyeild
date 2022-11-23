@@ -25,8 +25,15 @@ const ContactUs = () => {
   const [subject, setSubject] = useState();
   const [message, setMessage] = useState();
 
+
+  const regExp = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
+  const phonenoexp = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
+  // const passwordexp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+
   const handleAction = (event) => {
-    try {
+
+    if (regExp.test(email)) {
+      if(phonenoexp.test(contact)){
 
       const docRef = addDoc(collection(db, "contact"), {
         name: name,
@@ -38,9 +45,14 @@ const ContactUs = () => {
       });
       console.log(docRef.name)
       toast.success("Data Add Successfully");
-    } catch (e) {
-      toast.error("please check your input field");
+      }else{
+        toast.error("please check the contact");
+      }
+    } else {
+      toast.error("please check the email");
     }
+    
+
   }
 
   return (
@@ -78,10 +90,12 @@ const ContactUs = () => {
                 <Grid item xs={12} sm={6}>
                   <TextField
                     fullWidth
+                    type='email'
                     id="email"
                     label="Email"
                     name="email"
                     autoComplete="email"
+                    value={email}
                     onChange={(event) => setEmail(event.target.value)}
                   />
                 </Grid>
