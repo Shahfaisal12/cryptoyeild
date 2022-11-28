@@ -26,33 +26,30 @@ const ContactUs = () => {
   const [message, setMessage] = useState();
 
 
-  const regExp = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
-  const phonenoexp = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
-  // const passwordexp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+  // const regExp = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
+  // const phonenoexp = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
 
   const handleAction = (event) => {
 
-    if (regExp.test(email)) {
-      if(phonenoexp.test(contact)){
+    // if (regExp.test(email)) {
+    //   if (phonenoexp.test(contact)) {
 
-      const docRef = addDoc(collection(db, "contact"), {
-        name: name,
-        email: email,
-        contact: contact,
-        subject: subject,
-        message: message
+        const docRef = addDoc(collection(db, "contact"), {
+          name: name,
+          email: email,
+          contact: contact,
+          subject: subject,
+          message: message
 
-      });
-      console.log(docRef.name)
-      toast.success("Data Add Successfully");
-      }else{
-        toast.error("please check the contact");
-      }
-    } else {
-      toast.error("please check the email");
-    }
-    
-
+        });
+        console.log(docRef.name)
+        toast.success("Data Add Successfully");
+    //   } else {
+    //     toast.error("please check the contact");
+    //   }
+    // } else {
+    //   toast.error("please check the email");
+    // }
   }
 
   return (

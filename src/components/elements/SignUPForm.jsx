@@ -11,13 +11,15 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
-const SignUPForm = ({title, setFirstName, setLastName, setEmail, setPassword, handleAction}) => {
-  
+const SignUPForm = ({ password, title, setFirstName, setLastName, setEmail, setPassword, handleAction }) => {
+
+  const regExp = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$ !%*#?&]{8,}$/g;
+  const testPassword = regExp.test(password);
 
   return (
 
     <Container container spacing={2} sx={{ my: 5 }}>
-      <Grid container spacing={2}  sx={{ mb: 5 }}>
+      <Grid container spacing={2} sx={{ mb: 5 }}>
         <Grid item xs={7} className='d-flex align-items-center justify-content-center'>
           <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" className="img-fluid" alt="" />
         </Grid>
@@ -47,7 +49,7 @@ const SignUPForm = ({title, setFirstName, setLastName, setEmail, setPassword, ha
                     id="firstName"
                     label="First Name"
                     autoFocus
-                    onChange={(event)=> setFirstName(event.target.value)}
+                    onChange={(event) => setFirstName(event.target.value)}
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -58,7 +60,7 @@ const SignUPForm = ({title, setFirstName, setLastName, setEmail, setPassword, ha
                     label="Last Name"
                     name="lastName"
                     autoComplete="family-name"
-                    onChange={(event)=>setLastName(event.target.value)}
+                    onChange={(event) => setLastName(event.target.value)}
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -69,7 +71,7 @@ const SignUPForm = ({title, setFirstName, setLastName, setEmail, setPassword, ha
                     label="Email Address"
                     name="email"
                     autoComplete="email"
-                    onChange={(event)=>setEmail(event.target.value)}
+                    onChange={(event) => setEmail(event.target.value)}
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -81,8 +83,11 @@ const SignUPForm = ({title, setFirstName, setLastName, setEmail, setPassword, ha
                     type="password"
                     id="password"
                     autoComplete="new-password"
-                    onChange={(event)=>setPassword(event.target.value)}
+                    error={testPassword ? false : true}
+                    helperText={testPassword ? '' : 'Incorrect entry.'}
+                    onChange={(event) => setPassword(event.target.value)}
                   />
+                  {/* { testPassword ? '' : <p className='text-danger'>Please Check your password..!</p>} */}
                 </Grid>
                 <Grid item xs={12}>
                   <FormControlLabel
@@ -92,10 +97,14 @@ const SignUPForm = ({title, setFirstName, setLastName, setEmail, setPassword, ha
                 </Grid>
               </Grid>
               <Button
-               onClick={handleAction}
+                onClick={handleAction}
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
+                disabled={
+                  testPassword === '' ? true : false ||
+                    testPassword ? false : true
+                }
               >
                 Sign Up
               </Button>

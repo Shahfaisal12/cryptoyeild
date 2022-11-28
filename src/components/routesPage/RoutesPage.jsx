@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React, { useState } from 'react'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import Home from '../../pages/Home'
 import Dashboard from '../../pages/Dashboard'
@@ -19,6 +19,9 @@ const RoutesPage = () => {
     const [lastName, setLastName] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
+
+
+
 
     const navigate = useNavigate();
 
@@ -96,6 +99,7 @@ const RoutesPage = () => {
                     setFirstName={setFirstName}
                     setLastName={setLastName}
                     setEmail={setEmail}
+                    password={password}
                     setPassword={setPassword}
                     handleAction={() => handleAction(2)} />} />
                 <Route path='/dashboard' element={<Dashboard />} />
